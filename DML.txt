@@ -1,0 +1,18 @@
+INSERT INTO countries(name, continent_name) 
+VALUES("SAUDI ARABIA", "ASIA");
+
+INSERT INTO users(full_name, email, gender, date_of_birth, created_at, country_code) 
+VALUES("ABDULKREM AL SAIF", "ABDULKREM@EXAMPLE.COM", 'M', "1997-5-8", "2022-4-17", "1");
+
+INSERT INTO orders(user_id, status, created_at) 
+VALUES(1, "START", "2022");
+
+INSERT INTO products(name, status, price, created_at) 
+VALUES("P ONE", "VALID", 20, "2022");
+
+INSERT INTO order_products(order_id, product_id, quantity) 
+VALUES(1, 1, 50);
+
+UPDATE countries SET continent_name = "MIDDLE EAST" WHERE code = 1
+
+DELETE FROM products WHERE id = 1
